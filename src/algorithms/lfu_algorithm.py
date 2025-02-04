@@ -1,5 +1,5 @@
 from src.page import Page
-from src.replacement_algorithm.base_algorithm import BaseAlgorithm
+from src.algorithms.base_algorithm import BaseAlgorithm
 
 class LFUAlgorithm(BaseAlgorithm):
 

@@ -1,5 +1,5 @@
-from src.replacement_algorithm.base_algorithm import BaseAlgorithm
-from src.replacement_algorithm.clock_algorithm import ClockAlgorithm
+from src.algorithms.base_algorithm import BaseAlgorithm
+from src.algorithms.clock_algorithm import ClockAlgorithm
 
 
 import os
