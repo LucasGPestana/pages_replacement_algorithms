@@ -1,8 +1,9 @@
-from src.replacement_algorithm.fifo_algorithm import FIFOAlgorithm
-from src.replacement_algorithm.clock_algorithm import ClockAlgorithm
-from src.replacement_algorithm.lfu_algorithm import LFUAlgorithm
-from src.replacement_algorithm.lru_algorithm import LRUAlgorithm
-from src.replacement_algorithm.optimal_algorithm import OptimalAlgorithm
+from src.algorithms.fifo_algorithm import FIFOAlgorithm
+from src.algorithms.clock_algorithm import ClockAlgorithm
+from src.algorithms.lfu_algorithm import LFUAlgorithm
+from src.algorithms.lru_algorithm import LRUAlgorithm
+from src.algorithms.optimal_algorithm import OptimalAlgorithm
+from src.algorithms.random_algorithm import RandomAlgorithm
 
 
 from src.utils.results import getResultsFromAlgorithm
@@ -19,6 +20,8 @@ lru = LRUAlgorithm(pages_references, 3)
 
 optimal = OptimalAlgorithm(pages_references, 3)
 
-for algorithm in (fifo, clock, lfu, lru, optimal):
+random = RandomAlgorithm(pages_references, 3)
+
+for algorithm in (fifo, clock, lfu, lru, optimal, random):
 
     getResultsFromAlgorithm(algorithm)
